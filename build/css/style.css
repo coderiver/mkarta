@@ -32,8 +32,8 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.2; }
 
 @font-face { font-family: "Proximanova Regular"; src: url("fonts/proximanova-regular.eot"); src: url("fonts/proximanova-regular.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-regular.woff2") format("woff2"), url("fonts/proximanova-regular.woff") format("woff"), url("fonts/proximanova-regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: "PfSqu"; src: url("fonts/pf_square_sans_pro_bold.eot"); src: url("fonts/pf_square_sans_pro_bold.eot?#iefix") format("embedded-opentype"), url("fonts/pf_square_sans_pro_bold.woff2") format("woff2"), url("fonts/pf_square_sans_pro_bold.woff") format("woff"), url("fonts/pf_square_sans_pro_bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-.out { background-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(13%, black), color-stop(50%, #ad1285), color-stop(86%, black), to(black)); background-image: -webkit-linear-gradient(bottom, black 0%, black 13%, #ad1285 50%, black 86%, black 100%); background-image: linear-gradient(to top, black 0%, black 13%, #ad1285 50%, black 86%, black 100%); }
+@font-face { font-family: "PfSqureSansPro Bold"; src: url("fonts/pf_square_sans_pro_bold.eot"); src: url("fonts/pf_square_sans_pro_bold.eot?#iefix") format("embedded-opentype"), url("fonts/pf_square_sans_pro_bold.woff2") format("woff2"), url("fonts/pf_square_sans_pro_bold.woff") format("woff"), url("fonts/pf_square_sans_pro_bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+.out { background-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(13%, black), color-stop(50%, #ad1285), color-stop(86%, black), to(black)); background-image: -webkit-linear-gradient(bottom, black 0%, black 13%, #ad1285 50%, black 86%, black 100%); background-image: linear-gradient(to top, black 0%, black 13%, #ad1285 50%, black 86%, black 100%); min-width: 320px; }
 
 img { max-width: 100%; height: auto; }
 
@@ -43,7 +43,7 @@ img { max-width: 100%; height: auto; }
 .btn:active { top: 1px; }
 .btn:hover { background-color: #80075a; }
 
-.love { background: url(../img/love.png) no-repeat center; height: 879px; background-size: cover; text-align: center; }
+.love { background: url(../img/love.png) no-repeat center; height: 879px; text-align: center; }
 .love .love__in { max-width: 680px; margin: auto; padding: 0 20px; }
 .love .love__tpic { padding-top: 170px; }
 .love .love__mpic { margin-top: -23px; }
@@ -57,12 +57,35 @@ img { max-width: 100%; height: auto; }
 .go-in .col1 { padding-right: 18px; width: 78%; }
 .go-in .col2 { width: 22%; }
 .go-in .btn { text-transform: uppercase; background-color: #370327; width: 100%; }
+
+.m-card { position: relative; font-size: 0; text-align: center; }
+.m-card .m-card__in { margin: auto; max-width: 990px; padding: 0 20px; }
+.m-card .m-card__content .col1, .m-card .m-card__content .col2 { width: 50%; display: inline-block; vertical-align: top; }
+.m-card .m-card__title { padding: 40px 20px 45px; }
+.m-card .heart { display: inline-block; vertical-align: top; width: 50%; }
+
+.m-card__title { font: 24.66px Arial, sans-serif; color: #fff; }
+.m-card__title span { padding: 0 6px; position: relative; top: 1px; }
+
+.heart { position: relative; }
+.heart.heart_arrow:before { content: " "; display: block; position: absolute; left: 0; right: 0; margin: auto; bottom: 97%; background-image: url("../img/icons.png"); width: 25px; height: 53px; background-position: 0px 0px; }
+.heart.heart_arrow:after { content: " "; display: block; position: absolute; top: 73px; right: -20px; background-image: url("../img/icons.png"); width: 40px; height: 13px; background-position: -29px 0px; }
+.heart figcaption { font: 18px Arial, sans-serif; color: #fff; margin-top: 52px; }
+.heart figcaption span { color: #b2b2b2; font-size: 14px; display: block; margin-top: 24px; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (max-width: 1024px){
  .love{ background: none; }
  .go-in .col1{ width: 65%; }
  .go-in .col2{ width: 35%; } }
+@media only screen and (max-width: 976px){
+ .m-card .m-card__content .col1, .m-card .m-card__content .col2{ width: 100%; }
+ .heart.heart_arrow:after{ -webkit-transform: scale(1.5); -ms-transform: scale(1.5); transform: scale(1.5); } }
+@media only screen and (max-width: 540px){
+ .m-card .heart{ width: 100%; }
+ .m-card .heart:not(:last-child){ margin-bottom: 50px; }
+ .heart.heart_arrow:after{ left: 0; right: 0; margin: auto; top: 108%; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
+ .heart figcaption{ margin-top: 20px; } }
 @media only screen and (max-width: 450px){
  .go-in .col1{ width: 100%; padding-right: 0; margin-bottom: 10px; }
  .go-in .col2{ width: 100%; } }
