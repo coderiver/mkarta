@@ -30,7 +30,45 @@
 
 body
 	font-family: Arial, sans-serif
-	font-size: 12px
-	line-height: 1.4
-	
+	font-size: 18px
+	line-height: 1.2
+
+//fonts
++font("Proximanova Regular", "proximanova-regular")
++font("PfSqu", "pf_square_sans_pro_bold")
+=reg
+	font-family: "Proximanova Regular", sans-serif
+//vars
+$dark: #370327
+
+
 // common blocks
+.out
+	background-image: linear-gradient(to top, black 0%, black 13%, #ad1285 50%, black 86%, black 100%)
+img
+	max-width: 100%
+	height: auto
+.input-text
+	border-radius: 3px
+	background-color: #FFF
+	height: 34px
+	line-height: 32px
+	+reg
+	font-size: 11.21px
+	color: #959da2
+	padding: 6px 15px
+	width: 100%
+.btn 
+	height: 34px
+	line-height: 33px
+	display: inline-block
+	+reg
+	font-size: 11.21px
+	color: #fff
+	cursor: pointer
+	position: relative
+	+tr(all .3s)
+	&:active
+		top: 1px
+	&:hover
+		background-color: lighten($dark, 15%)

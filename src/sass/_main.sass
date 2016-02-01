@@ -1,1 +1,55 @@
 // Normally mainpage styles
+.love 
+	background: url(../img/love.png) no-repeat center
+	height: 879px
+	background-size: cover
+	text-align: center
+	+r(1024)
+		background: none
+	.love__in
+		max-width: 680px
+		margin: auto
+		padding: 0 20px
+	.love__tpic
+		padding-top: 170px
+	.love__mpic
+		margin-top: -23px
+	.love__bpic
+		margin-top: 30px
+	img
+		display: inline-block
+	.go-in
+		margin-top: 41px
+.go-in
+	padding: 18px
+	background-color: #b7176e
+	border-radius: 3px
+	margin: auto
+	position: relative
+	.row
+		font-size: 0
+	[class^="col"],
+	[class*="col"]
+		display: inline-block
+		vertical-align: top
+	.col1 
+		padding-right: 18px
+		width: 78%
+		+r(1024)
+			width: 65%
+		+r(450)
+			width: 100%
+			padding-right: 0
+			margin-bottom: 10px
+	.col2
+		width: 22%
+		+r(1024)
+			width: 35%
+		+r(450)
+			width: 100%
+	.btn 
+		text-transform: uppercase
+		background-color: $dark
+		width: 100%
+
+

@@ -29,10 +29,43 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .icon-skrill:before { content: ""; }
 
-body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.2; }
 
+@font-face { font-family: "Proximanova Regular"; src: url("fonts/proximanova-regular.eot"); src: url("fonts/proximanova-regular.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-regular.woff2") format("woff2"), url("fonts/proximanova-regular.woff") format("woff"), url("fonts/proximanova-regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "PfSqu"; src: url("fonts/pf_square_sans_pro_bold.eot"); src: url("fonts/pf_square_sans_pro_bold.eot?#iefix") format("embedded-opentype"), url("fonts/pf_square_sans_pro_bold.woff2") format("woff2"), url("fonts/pf_square_sans_pro_bold.woff") format("woff"), url("fonts/pf_square_sans_pro_bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+.out { background-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(13%, black), color-stop(50%, #ad1285), color-stop(86%, black), to(black)); background-image: -webkit-linear-gradient(bottom, black 0%, black 13%, #ad1285 50%, black 86%, black 100%); background-image: linear-gradient(to top, black 0%, black 13%, #ad1285 50%, black 86%, black 100%); }
+
+img { max-width: 100%; height: auto; }
+
+.input-text { -webkit-border-radius: 3px; border-radius: 3px; background-color: #FFF; height: 34px; line-height: 32px; font-family: "Proximanova Regular", sans-serif; font-size: 11.21px; color: #959da2; padding: 6px 15px; width: 100%; }
+
+.btn { height: 34px; line-height: 33px; display: inline-block; font-family: "Proximanova Regular", sans-serif; font-size: 11.21px; color: #fff; cursor: pointer; position: relative; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.btn:active { top: 1px; }
+.btn:hover { background-color: #80075a; }
+
+.love { background: url(../img/love.png) no-repeat center; height: 879px; background-size: cover; text-align: center; }
+.love .love__in { max-width: 680px; margin: auto; padding: 0 20px; }
+.love .love__tpic { padding-top: 170px; }
+.love .love__mpic { margin-top: -23px; }
+.love .love__bpic { margin-top: 30px; }
+.love img { display: inline-block; }
+.love .go-in { margin-top: 41px; }
+
+.go-in { padding: 18px; background-color: #b7176e; -webkit-border-radius: 3px; border-radius: 3px; margin: auto; position: relative; }
+.go-in .row { font-size: 0; }
+.go-in [class^="col"], .go-in [class*="col"] { display: inline-block; vertical-align: top; }
+.go-in .col1 { padding-right: 18px; width: 78%; }
+.go-in .col2 { width: 22%; }
+.go-in .btn { text-transform: uppercase; background-color: #370327; width: 100%; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
+@media only screen and (max-width: 1024px){
+ .love{ background: none; }
+ .go-in .col1{ width: 65%; }
+ .go-in .col2{ width: 35%; } }
+@media only screen and (max-width: 450px){
+ .go-in .col1{ width: 100%; padding-right: 0; margin-bottom: 10px; }
+ .go-in .col2{ width: 100%; } }
 
 
 
