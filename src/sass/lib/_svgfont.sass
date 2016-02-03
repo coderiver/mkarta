@@ -5,8 +5,9 @@
 	font-weight: normal
 	font-style: normal
 
-$icon-sepa: "\EA01"
-$icon-skrill: "\EA02"
+$icon-logos-top-sm: "\EA01"
+$icon-sepa: "\EA02"
+$icon-skrill: "\EA03"
 
 
 %icon
@@ -23,7 +24,9 @@ $icon-skrill: "\EA02"
 	@extend %icon
 	display: inline-block
 
+.icon-logos-top-sm:before
+	content: $icon-logos-top-sm
 .icon-sepa:before
 	content: $icon-sepa
 .icon-skrill:before
-	content: $icon-skrill
+	content: $icon-skrill

@@ -35,17 +35,41 @@ body
 
 //fonts
 +font("Proximanova Regular", "proximanova-regular")
-+font("PfSqureSansPro Bold", "pf_square_sans_pro_bold")
++font("PfSqureSansPro Bold", "pfsquaresanspro-bold")
++font("PfSqureSansPro Regular", "pfsquaresanspro-regular")
 =reg
 	font-family: "Proximanova Regular", sans-serif
 =bold
 	font-family: "PfSqureSansPro Bold", sans-serif
+=regular
+	font-family: "PfSqureSansPro Regular", sans-serif
 //vars
 $dark: #370327
+//icons
+[class^="icon"],
+[class*="icon"]
+	display: inline-block
+.icon-angl1 
+	+s(icon-angl1)
+.icon-angl2 
+	+s(icon-angl2)
+.icon-angl3 
+	+s(icon-angl3)
+.icon-angl4 
+	+s(icon-angl4)
+.icon-angl5 
+	+s(icon-angl5)
+.icon-angl6 
+	+s(icon-angl6)
+.icon-angl7 
+	+s(icon-angl7)
+.icon-old
+	+s(icon-old)
 
 
 // common blocks
 .out
+	background-color: #000
 	background-image: linear-gradient(to top, black 0%, black 13%, #ad1285 50%, black 86%, black 100%)
 	min-width: 320px
 img

@@ -5,9 +5,8 @@
 	text-align: center
 	+r(1024)
 		background: none
+		height: auto
 	.love__in
-		max-width: 680px
-		margin: auto
 		padding: 0 20px
 	.love__tpic
 		padding-top: 170px
@@ -17,14 +16,14 @@
 		margin-top: 30px
 	img
 		display: inline-block
-	.go-in
-		margin-top: 41px
 .go-in
 	padding: 18px
 	background-color: #b7176e
 	border-radius: 3px
 	margin: auto
 	position: relative
+	margin-top: 41px
+	max-width: 640px
 	.row
 		font-size: 0
 	[class^="col"],
@@ -57,7 +56,7 @@
 	.m-card__in
 		margin: auto
 		max-width: 990px
-		padding: 0 20px
+		padding: 54px 20px 189px
 	.m-card__content
 		.col1, .col2
 			width: 50%
@@ -65,8 +64,9 @@
 			vertical-align: top
 			+r(976)
 				width: 100%
-	.m-card__title
-		padding: 40px 20px 45px
+				margin-bottom: 20px
+	.card__title
+		padding: 0 20px 45px
 	.heart
 		display: inline-block
 		vertical-align: top
@@ -75,7 +75,9 @@
 			width: 100%
 			&:not(:last-child)
 				margin-bottom: 50px
-.m-card__title
+.card, .bonus
+	padding: 40px 0 0
+.card__title
 	font: 24.66px Arial, sans-serif
 	color: #fff
 	span
@@ -121,4 +123,188 @@
 			font-size: 14px
 			display: block
 			margin-top: 24px
+.bonus
+	position: relative
+	color: #fdfdfd
+	+bold
+	font-size: 31px
+	a
+		text-decoration: underline
+		font-size: 24px
+		color: #ffffff
+		vertical-align: middle
+		+regular
+		position: relative
+		top: -2px
+		&:hover
+			text-decoration: none
+.share-wrp
+	position: relative
+.share
+	position: relative
+	.share__in
+		max-width: 980px
+		margin: auto
+		padding: 0 20px 263px
+		&.share__in_no-space
+			+r(1024)
+				padding-bottom: 0
+		+r(1024)
+			padding-bottom: 20%
+.logos-wrp
+	position: relative
+	.time-b
+		position: absolute
+		top: 84px
+		left: -50px
+		+r(1100)
+			display: block
+			position: relative
+			padding: 30px 0
+			text-align: center
+			top: inherit
+			left: inherit
+		.time-b__heart
+			+r(1100)
+				display: inline-block
+.logos
+	background-color: #fff
+	border-radius: 10px
+	padding: 110px 20px 40px
+	text-align: center
+	position: relative
+	&.logos_top-spacing
+		padding-top: 76px
+	.icon-angl1
+		right: calc(100% + 50px)
+		top: 234px
+	.icon-angl2
+		left: 105%
+		top: -96px
+	.icon-angl3
+		right: calc(100% + 50px)
+		bottom: 152px
+	.icon-angl4
+		left: 105%
+		top: 325px
+	.icon-angl5
+		right: calc(100% + 50px)
+		bottom: calc(100% + 59px)
+	.icon-angl6
+		left: 105%
+		top: 406px
+	.icon-angl7
+		right: calc(100% + 50px)
+		top: 375px
+	+r(1024)
+		height: auto
+		padding: 80px 10px 30px
+	[class^="icon-angl"]
+		position: absolute
+		z-index: 10
+		+r(1420)
+			display: none
+.top-header
+	position: absolute
+	top: -175px
+	right: 0
+	background: url(../img/logos-top.png) no-repeat
+	height: 324px
+	width: 1041px
+	+r(1024)
+		background: url(../img/logos-top-simp.png) no-repeat
+		width: 421px
+		left: 0
+		right: 0
+		margin: auto
+	+r(768)
+		background: url(../img/logos-top-med.png) no-repeat
+		width: 320px
+		height: 246px
+		top: -140px
+	+r(480)
+		background: url(../img/logos-top-med.png) no-repeat
+		background-size: cover
+		width: 280px
+		height: 215px
+		top: -120px
+	img 
+		max-width: none
+	.top-header__title
+		text-transform: uppercase
+		text-align: center
+		font-size: 29px
+		line-height: 31px
+		color: #91165a
+		+bold
+		max-width: 142px
+		display: inline-block
+		position: absolute
+		left: 130px
+		top: 110px
+		+r(768)
+			left: 86px
+			top: 78px
+			font-size: 22px
+			line-height: 1.3
+		+r(480)
+			font-size: 18px
+			left: 80px
+			max-width: 115px
+			top: 70px
+.time-b
+	display: inline-block
+	.time-b__heart
+		display: block
+		text-align: center
+		background: url(../img/time-b-heart.png) no-repeat
+		width: 58px
+		height: 51px
+		margin-bottom: 8px
+		cursor: pointer
+		position: relative
+		&:active
+			top: 1px
+		span 
+			font-size: 12px
+			color: #fff
+			+bold
+			display: inline-block
+			padding-bottom: 4px
+.bottom
+	position: relative
+	&__in
+		max-width: 980px
+		margin: auto
+		padding: 0 20px 107px
+.old
+	position: relative
+	height: 341px
+	background-color: black
+	border-bottom: 3px solid #88034c
+	border-radius: 10px
+	+r(1024)
+		height: auto
+		.top-header, i
+			position: relative
+			top: inherit
+			right: inherit
+			bottom: inherit
+			left: inherit
+			display: block
+	i
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		margin: auto
+		position: absolute
+		z-index: 5
+		+r(1024)
+			transform: scale(0.8)
+		+r(768)
+			transform: scale(0.6)
+		+r(480)
+			transform: scale(0.5)
+
 
