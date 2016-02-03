@@ -180,7 +180,8 @@ img { max-width: 100%; height: auto; }
  .m-card .heart{ width: 100%; }
  .m-card .heart:not(:last-child){ margin-bottom: 50px; }
  .heart.heart_arrow:after{ left: 0; right: 0; margin: auto; top: 108%; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
- .heart figcaption{ margin-top: 20px; } }
+ .heart figcaption{ margin-top: 20px; }
+ .bonus{ font-size: 26px; } }
 @media only screen and (max-width: 480px){
  .top-header{ background: url(../img/logos-top-med.png) no-repeat; background-size: cover; width: 280px; height: 215px; top: -120px; }
  .top-header .top-header__title{ font-size: 18px; left: 80px; max-width: 115px; top: 70px; }
