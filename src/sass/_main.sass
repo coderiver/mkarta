@@ -12,6 +12,7 @@
 		padding-top: 170px
 	.love__mpic
 		margin-top: -23px
+		+hide-text
 	.love__bpic
 		margin-top: 30px
 	img
@@ -306,5 +307,31 @@
 			transform: scale(0.6)
 		+r(480)
 			transform: scale(0.5)
-
-
+.mail-form
+	width: 200px
+	height: 172px
+	padding: 15px 10px 20px
+	text-align: center
+	position: fixed
+	top: 0
+	right: 14px
+	background-color: #f7f5ff
+	background: linear-gradient(45deg, #7d1756 0%, #7e1856 100%)
+	border-radius: 5px
+	z-index: 100
+	+r(1420)
+		display: none
+	.mail-form__top
+		+proxima-regular
+		font-size: 11px
+		color: #fff
+		text-align: center
+		margin-bottom: 18px
+	.input-text
+		font-size: 13px
+		+proxima-regular
+		margin-bottom: 18px
+	.btn
+		background-color: #3d0122
+		+proxima-bold
+		width: 115px

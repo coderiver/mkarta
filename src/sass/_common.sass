@@ -34,15 +34,19 @@ body
 	line-height: 1.2
 
 //fonts
-+font("Proximanova Regular", "proximanova-regular")
 +font("PfSqureSansPro Bold", "pfsquaresanspro-bold")
 +font("PfSqureSansPro Regular", "pfsquaresanspro-regular")
-=reg
-	font-family: "Proximanova Regular", sans-serif
-=bold
-	font-family: "PfSqureSansPro Bold", sans-serif
++font("Proximanova Regular", "proximanova-reg")
++font("Proximanova Bold", "proximanova-bold")
 =regular
 	font-family: "PfSqureSansPro Regular", sans-serif
+=bold
+	font-family: "PfSqureSansPro Bold", sans-serif
+=proxima-regular
+	font-family: "Proximanova Regular", sans-serif
+=proxima-bold
+	font-family: "Proximanova Bold", sans-serif
+
 //vars
 $dark: #370327
 //icons
@@ -75,26 +79,38 @@ $dark: #370327
 img
 	max-width: 100%
 	height: auto
-.input-text
+%input
 	border-radius: 3px
 	background-color: #FFF
 	height: 34px
-	line-height: 32px
-	+reg
+	+proxima-regular
 	font-size: 11.21px
 	color: #959da2
 	padding: 6px 15px
 	width: 100%
-.btn 
+%btn
 	height: 34px
-	line-height: 33px
 	display: inline-block
-	+reg
+	+proxima-regular
 	font-size: 11.21px
 	color: #fff
 	cursor: pointer
 	position: relative
 	+tr(all .3s)
+.input-text
+	@extend %input
+	&:focus
+		border: 1px solid #fd3802
+	&.input-text_mod
+		height: 30px
+		padding: 0 10px
+.btn 
+	@extend %btn
+	&.btn_sm
+		width: 115px
+		height: 30px
+		background-color: #3d0122
+		border-radius: 2px
 	&:active
 		top: 1px
 	&:hover

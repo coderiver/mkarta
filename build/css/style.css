@@ -33,9 +33,10 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.2; }
 
-@font-face { font-family: "Proximanova Regular"; src: url("fonts/proximanova-regular.eot"); src: url("fonts/proximanova-regular.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-regular.woff2") format("woff2"), url("fonts/proximanova-regular.woff") format("woff"), url("fonts/proximanova-regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "PfSqureSansPro Bold"; src: url("fonts/pfsquaresanspro-bold.eot"); src: url("fonts/pfsquaresanspro-bold.eot?#iefix") format("embedded-opentype"), url("fonts/pfsquaresanspro-bold.woff2") format("woff2"), url("fonts/pfsquaresanspro-bold.woff") format("woff"), url("fonts/pfsquaresanspro-bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "PfSqureSansPro Regular"; src: url("fonts/pfsquaresanspro-regular.eot"); src: url("fonts/pfsquaresanspro-regular.eot?#iefix") format("embedded-opentype"), url("fonts/pfsquaresanspro-regular.woff2") format("woff2"), url("fonts/pfsquaresanspro-regular.woff") format("woff"), url("fonts/pfsquaresanspro-regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Proximanova Regular"; src: url("fonts/proximanova-reg.eot"); src: url("fonts/proximanova-reg.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-reg.woff2") format("woff2"), url("fonts/proximanova-reg.woff") format("woff"), url("fonts/proximanova-reg.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Proximanova Bold"; src: url("fonts/proximanova-bold.eot"); src: url("fonts/proximanova-bold.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-bold.woff2") format("woff2"), url("fonts/proximanova-bold.woff") format("woff"), url("fonts/proximanova-bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 [class^="icon"], [class*="icon"] { display: inline-block; }
 
 .icon-angl1 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -289px 0px; }
@@ -58,16 +59,21 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.2; }
 
 img { max-width: 100%; height: auto; }
 
-.input-text { -webkit-border-radius: 3px; border-radius: 3px; background-color: #FFF; height: 34px; line-height: 32px; font-family: "Proximanova Regular", sans-serif; font-size: 11.21px; color: #959da2; padding: 6px 15px; width: 100%; }
+.input-text { -webkit-border-radius: 3px; border-radius: 3px; background-color: #FFF; height: 34px; font-family: "Proximanova Regular", sans-serif; font-size: 11.21px; color: #959da2; padding: 6px 15px; width: 100%; }
 
-.btn { height: 34px; line-height: 33px; display: inline-block; font-family: "Proximanova Regular", sans-serif; font-size: 11.21px; color: #fff; cursor: pointer; position: relative; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.btn { height: 34px; display: inline-block; font-family: "Proximanova Regular", sans-serif; font-size: 11.21px; color: #fff; cursor: pointer; position: relative; -webkit-transition: all 0.3s; transition: all 0.3s; }
+
+.input-text:focus { border: 1px solid #fd3802; }
+.input-text.input-text_mod { height: 30px; padding: 0 10px; }
+
+.btn.btn_sm { width: 115px; height: 30px; background-color: #3d0122; -webkit-border-radius: 2px; border-radius: 2px; }
 .btn:active { top: 1px; }
 .btn:hover { background-color: #80075a; }
 
 .love { background: url(../img/love.png) no-repeat center; height: 879px; text-align: center; }
 .love .love__in { padding: 0 20px; }
 .love .love__tpic { padding-top: 170px; }
-.love .love__mpic { margin-top: -23px; }
+.love .love__mpic { margin-top: -23px; font: 0/0 a; text-shadow: none; color: transparent; }
 .love .love__bpic { margin-top: 30px; }
 .love img { display: inline-block; }
 
@@ -132,10 +138,16 @@ img { max-width: 100%; height: auto; }
 
 .old { position: relative; height: 341px; background-color: black; border-bottom: 3px solid #88034c; -webkit-border-radius: 10px; border-radius: 10px; }
 .old i { top: 0; bottom: 0; left: 0; right: 0; margin: auto; position: absolute; z-index: 5; }
+
+.mail-form { width: 200px; height: 172px; padding: 15px 10px 20px; text-align: center; position: fixed; top: 0; right: 14px; background-color: #f7f5ff; background: -webkit-linear-gradient(45deg, #7d1756 0%, #7e1856 100%); background: linear-gradient(45deg, #7d1756 0%, #7e1856 100%); -webkit-border-radius: 5px; border-radius: 5px; z-index: 100; }
+.mail-form .mail-form__top { font-family: "Proximanova Regular", sans-serif; font-size: 11px; color: #fff; text-align: center; margin-bottom: 18px; }
+.mail-form .input-text { font-size: 13px; font-family: "Proximanova Regular", sans-serif; margin-bottom: 18px; }
+.mail-form .btn { background-color: #3d0122; font-family: "Proximanova Bold", sans-serif; width: 115px; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (max-width: 1420px){
- .logos [class^="icon-angl"]{ display: none; } }
+ .logos [class^="icon-angl"]{ display: none; }
+ .mail-form{ display: none; } }
 @media only screen and (max-width: 1100px){
  .logos-wrp .time-b{ display: block; position: relative; padding: 30px 0; text-align: center; top: inherit; left: inherit; }
  .logos-wrp .time-b .time-b__heart{ display: inline-block; } }
