@@ -27,9 +27,9 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .icon-logos-top-sm:before { content: ""; }
 
-.icon-sepa:before { content: ""; }
+.icon-love:before { content: ""; }
 
-.icon-skrill:before { content: ""; }
+.icon-sale:before { content: ""; }
 
 body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.2; }
 
@@ -59,8 +59,6 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.2; }
 
 .out { background-color: #000; background-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(13%, black), color-stop(50%, #ad1285), color-stop(86%, black), to(black)); background-image: -webkit-linear-gradient(bottom, black 0%, black 13%, #ad1285 50%, black 86%, black 100%); background-image: linear-gradient(to top, black 0%, black 13%, #ad1285 50%, black 86%, black 100%); min-width: 300px; }
 
-img { max-width: 100%; height: auto; }
-
 .input-text { -webkit-border-radius: 3px; border-radius: 3px; background-color: #FFF; height: 34px; font-family: "Proximanova Regular", sans-serif; font-size: 11.21px; color: #959da2; padding: 6px 15px; width: 100%; }
 
 .btn { height: 34px; display: inline-block; font-family: "Proximanova Regular", sans-serif; font-size: 11.21px; color: #fff; cursor: pointer; position: relative; -webkit-transition: all 0.3s; transition: all 0.3s; }
@@ -73,15 +71,20 @@ img { max-width: 100%; height: auto; }
 .btn:hover { background-color: #80075a; }
 
 .love { background: url(../img/love.png) no-repeat center; height: 879px; text-align: center; }
-.love .love__in { padding: 0 20px; }
+.love .love__in { padding: 0 20px; margin: auto; max-width: 680px; }
 .love .love__tpic { padding-top: 170px; }
-.love .love__mpic { margin-top: -23px; font: 0/0 a; text-shadow: none; color: transparent; }
+.love .love__mpic { margin-top: -23px; text-align: left; }
+.love .love__mpic i { vertical-align: middle; }
+.love .love__mpic .icon-love { color: #fff; font-size: 177px; }
+.love .love__mpic .icon-sale { color: #b7176e; font-size: 82px; position: relative; top: 17px; left: 30px; }
+
+.love .love__mpic span { font-size: 35px; color: #fff; font-family: "PfSqureSansPro Bold", sans-serif; display: block; text-transform: uppercase; text-align: right; margin-top: -15px; }
 .love .love__bpic { margin-top: 30px; color: #fff; font-family: "PfSqureSansPro Regular", sans-serif; font-size: 28px; max-width: 590px; margin: auto; margin-top: 40px; text-align: left; }
 .love .love__bpic span { display: inline-block; vertical-align: middle; padding-right: 15px; }
 .love .love__bpic i { vertical-align: middle; }
 .love img { display: inline-block; }
 
-.go-in { padding: 18px; background-color: #b7176e; -webkit-border-radius: 3px; border-radius: 3px; margin: auto; position: relative; margin-top: 41px; max-width: 640px; }
+.go-in { padding: 18px; background-color: #b7176e; -webkit-border-radius: 3px; border-radius: 3px; margin: auto; position: relative; margin-top: 31px; max-width: 640px; }
 .go-in .row { font-size: 0; }
 .go-in [class^="col"], .go-in [class*="col"] { display: inline-block; vertical-align: top; }
 .go-in .col1 { padding-right: 18px; width: 78%; }
@@ -95,6 +98,9 @@ img { max-width: 100%; height: auto; }
 .m-card .heart { display: inline-block; vertical-align: top; width: 50%; }
 
 .card, .bonus { padding: 40px 0 0; }
+
+.card { display: none; }
+.card.is-visible { display: block; }
 
 .card__title { font: 24.66px Arial, sans-serif; color: #fff; }
 .card__title span { padding: 0 6px; position: relative; top: 1px; }
@@ -149,9 +155,12 @@ img { max-width: 100%; height: auto; }
 .mail-form .mail-form__top { font-family: "Proximanova Regular", sans-serif; font-size: 11px; color: #fff; text-align: center; margin-bottom: 18px; }
 .mail-form .input-text { font-size: 13px; font-family: "Proximanova Regular", sans-serif; margin-bottom: 18px; }
 .mail-form .btn { background-color: #3d0122; font-family: "Proximanova Bold", sans-serif; width: 115px; }
+@media only screen and (max-width: 540px) and (max-width: 400px){
+ .love .love__mpic .icon-sale{ left: 0; top: 0; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (max-width: 1420px){
+ img{ max-width: 100%; height: auto; }
  .logos [class^="icon-angl"]{ display: none; }
  .mail-form{ display: none; } }
 @media only screen and (max-width: 1100px){
@@ -172,11 +181,18 @@ img { max-width: 100%; height: auto; }
  .m-card .m-card__content .col1, .m-card .m-card__content .col2{ width: 100%; margin-bottom: 20px; }
  .heart.heart_arrow:after{ -webkit-transform: scale(1.5); -ms-transform: scale(1.5); transform: scale(1.5); } }
 @media only screen and (max-width: 768px){
+ .love .love__mpic{ text-align: left; margin-top: -10px; }
+ .love .love__mpic .icon-love{ font-size: 120px; }
+ .love .love__mpic .icon-sale{ font-size: 60px; top: 11px; }
+ .love .love__mpic span{ margin-top: 15px; text-align: left; font-size: 30px; }
  .love .love__bpic{ text-align: center; }
+ .go-in{ margin-top: 20px; }
  .top-header{ background: url(../img/logos-top-med.png) no-repeat; width: 320px; height: 246px; top: -140px; }
  .top-header .top-header__title{ left: 86px; top: 78px; font-size: 22px; line-height: 1.3; }
  .old i{ -webkit-transform: scale(0.6); -ms-transform: scale(0.6); transform: scale(0.6); } }
 @media only screen and (max-width: 540px){
+ .love .love__mpic .icon-love{ font-size: 75px; }
+ .love .love__mpic .icon-sale{ font-size: 45px; top: 6px; }
  .m-card .heart{ width: 100%; }
  .m-card .heart:not(:last-child){ margin-bottom: 50px; }
  .heart.heart_arrow:after{ left: 0; right: 0; margin: auto; top: 108%; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
@@ -189,6 +205,10 @@ img { max-width: 100%; height: auto; }
 @media only screen and (max-width: 450px){
  .go-in .col1{ width: 100%; padding-right: 0; margin-bottom: 10px; }
  .go-in .col2{ width: 100%; } }
+@media only screen and (max-width: 400px){
+ .love .love__mpic{ text-align: center; }
+ .love .love__mpic i{ display: block; margin-bottom: 15px; }
+ .love .love__mpic span{ text-align: center; } }
 
 
 

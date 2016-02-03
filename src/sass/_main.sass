@@ -8,11 +8,60 @@
 		height: auto
 	.love__in
 		padding: 0 20px
+		margin: auto
+		max-width: 680px
 	.love__tpic
 		padding-top: 170px
 	.love__mpic
 		margin-top: -23px
-		+hide-text
+		text-align: left
+		// +hide-text
+		+r(768)
+			text-align: left
+			margin-top: -10px
+		+r(400)
+			text-align: center
+		i
+			vertical-align: middle
+			+r(400)
+				display: block
+				margin-bottom: 15px
+		.icon-love
+			color: #fff
+			font-size: 177px
+			+r(768)
+				font-size: 120px
+			+r(540)
+				font-size: 75px
+		.icon-sale
+			color: #b7176e
+			font-size: 82px
+			position: relative
+			top: 17px
+			left: 30px
+			+r(768)
+				font-size: 60px
+				top: 11px
+			+r(540)
+				font-size: 45px
+				top: 6px
+				+r(400)
+					left: 0
+					top: 0
+		span
+			font-size: 35px
+			color: #fff
+			+bold
+			display: block
+			text-transform: uppercase
+			text-align: right
+			margin-top: -15px
+			+r(768)
+				margin-top: 15px
+				text-align: left
+				font-size: 30px
+			+r(400)
+				text-align: center
 	.love__bpic
 		margin-top: 30px
 		color: #fff
@@ -38,8 +87,10 @@
 	border-radius: 3px
 	margin: auto
 	position: relative
-	margin-top: 41px
+	margin-top: 31px
 	max-width: 640px
+	+r(768)
+		margin-top: 20px
 	.row
 		font-size: 0
 	[class^="col"],
@@ -93,6 +144,10 @@
 				margin-bottom: 50px
 .card, .bonus
 	padding: 40px 0 0
+.card
+	display: none
+	&.is-visible
+		display: block
 .card__title
 	font: 24.66px Arial, sans-serif
 	color: #fff
