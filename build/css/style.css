@@ -39,23 +39,25 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.2; }
 @font-face { font-family: "Proximanova Bold"; src: url("fonts/proximanova-bold.eot"); src: url("fonts/proximanova-bold.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-bold.woff2") format("woff2"), url("fonts/proximanova-bold.woff") format("woff"), url("fonts/proximanova-bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 [class^="icon"], [class*="icon"] { display: inline-block; }
 
-.icon-angl1 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -289px 0px; }
+.icon-angl1 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -175px -288px; }
 
-.icon-angl2 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -464px 0px; }
+.icon-angl2 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -350px -288px; }
 
-.icon-angl3 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: 0px -288px; }
+.icon-angl3 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -289px 0px; }
 
-.icon-angl4 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -175px -288px; }
+.icon-angl4 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -639px -182px; }
 
-.icon-angl5 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -350px -288px; }
+.icon-angl5 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -639px 0px; }
 
-.icon-angl6 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -639px 0px; }
+.icon-angl6 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: 0px -288px; }
 
-.icon-angl7 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -639px -182px; }
+.icon-angl7 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -464px 0px; }
 
 .icon-old { background-image: url("../img/icons.png"); width: 285px; height: 284px; background-position: 0px 0px; }
 
-.out { background-color: #000; background-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(13%, black), color-stop(50%, #ad1285), color-stop(86%, black), to(black)); background-image: -webkit-linear-gradient(bottom, black 0%, black 13%, #ad1285 50%, black 86%, black 100%); background-image: linear-gradient(to top, black 0%, black 13%, #ad1285 50%, black 86%, black 100%); min-width: 320px; }
+.icon-heart-sale { background-image: url("../img/icons.png"); width: 149px; height: 79px; background-position: -639px -364px; }
+
+.out { background-color: #000; background-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(13%, black), color-stop(50%, #ad1285), color-stop(86%, black), to(black)); background-image: -webkit-linear-gradient(bottom, black 0%, black 13%, #ad1285 50%, black 86%, black 100%); background-image: linear-gradient(to top, black 0%, black 13%, #ad1285 50%, black 86%, black 100%); min-width: 300px; }
 
 img { max-width: 100%; height: auto; }
 
@@ -74,7 +76,9 @@ img { max-width: 100%; height: auto; }
 .love .love__in { padding: 0 20px; }
 .love .love__tpic { padding-top: 170px; }
 .love .love__mpic { margin-top: -23px; font: 0/0 a; text-shadow: none; color: transparent; }
-.love .love__bpic { margin-top: 30px; }
+.love .love__bpic { margin-top: 30px; color: #fff; font-family: "PfSqureSansPro Regular", sans-serif; font-size: 28px; max-width: 590px; margin: auto; margin-top: 40px; text-align: left; }
+.love .love__bpic span { display: inline-block; vertical-align: middle; padding-right: 15px; }
+.love .love__bpic i { vertical-align: middle; }
 .love img { display: inline-block; }
 
 .go-in { padding: 18px; background-color: #b7176e; -webkit-border-radius: 3px; border-radius: 3px; margin: auto; position: relative; margin-top: 41px; max-width: 640px; }
@@ -96,8 +100,8 @@ img { max-width: 100%; height: auto; }
 .card__title span { padding: 0 6px; position: relative; top: 1px; }
 
 .heart { position: relative; }
-.heart.heart_arrow:before { content: " "; display: block; position: absolute; left: 0; right: 0; margin: auto; bottom: 97%; background-image: url("../img/icons.png"); width: 25px; height: 53px; background-position: -639px -364px; }
-.heart.heart_arrow:after { content: " "; display: block; position: absolute; top: 73px; right: -20px; background-image: url("../img/icons.png"); width: 40px; height: 13px; background-position: -668px -364px; }
+.heart.heart_arrow:before { content: " "; display: block; position: absolute; left: 0; right: 0; margin: auto; bottom: 97%; background-image: url("../img/icons.png"); width: 25px; height: 53px; background-position: -464px -182px; }
+.heart.heart_arrow:after { content: " "; display: block; position: absolute; top: 73px; right: -20px; background-image: url("../img/icons.png"); width: 40px; height: 13px; background-position: -639px -447px; }
 .heart figcaption { font: 18px Arial, sans-serif; color: #fff; margin-top: 52px; }
 .heart figcaption span { color: #b2b2b2; font-size: 14px; display: block; margin-top: 24px; }
 
@@ -168,6 +172,7 @@ img { max-width: 100%; height: auto; }
  .m-card .m-card__content .col1, .m-card .m-card__content .col2{ width: 100%; margin-bottom: 20px; }
  .heart.heart_arrow:after{ -webkit-transform: scale(1.5); -ms-transform: scale(1.5); transform: scale(1.5); } }
 @media only screen and (max-width: 768px){
+ .love .love__bpic{ text-align: center; }
  .top-header{ background: url(../img/logos-top-med.png) no-repeat; width: 320px; height: 246px; top: -140px; }
  .top-header .top-header__title{ left: 86px; top: 78px; font-size: 22px; line-height: 1.3; }
  .old i{ -webkit-transform: scale(0.6); -ms-transform: scale(0.6); transform: scale(0.6); } }
