@@ -35,6 +35,9 @@ $(document).ready(function() {
 	$('.js-more').on('click', function(e){
 		e.preventDefault();
 		$('.card').toggleClass('is-visible');
+		$('.bonus').css({
+			"display": "none"
+		})
 	});
 
 	// social fixed
@@ -49,11 +52,10 @@ $(document).ready(function() {
 			$(window).scroll(function(){ 
 
 				var windowTop = $(window).scrollTop();
-				console.log(windowTop+'==='+limit+'=='+footerTop+'==='+stickyHeight);
 				if ($(window).width() >= 1150) {
 				
 					if (stickyTop < windowTop){
-						el.css({ position: 'fixed', top: 0 });
+						el.css({ position: 'fixed', top: 10 });
 						el.addClass('is-active');
 					}
 					else {

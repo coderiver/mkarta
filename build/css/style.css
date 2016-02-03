@@ -125,13 +125,13 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.2; }
 
 .logos { background-color: #fff; -webkit-border-radius: 10px; border-radius: 10px; padding: 110px 20px 40px; text-align: center; position: relative; }
 .logos.logos_top-spacing { padding-top: 76px; }
-.logos .icon-angl1 { right: -webkit-calc(100% + 50px); right: calc(100% + 50px); top: 234px; }
+.logos .icon-angl1 { right: 100%; margin-right: 50px; top: 234px; }
 .logos .icon-angl2 { left: 105%; top: -96px; }
-.logos .icon-angl3 { right: -webkit-calc(100% + 50px); right: calc(100% + 50px); bottom: 152px; }
+.logos .icon-angl3 { right: 100%; margin-right: 50px; bottom: 152px; }
 .logos .icon-angl4 { left: 105%; top: 325px; }
-.logos .icon-angl5 { right: -webkit-calc(100% + 50px); right: calc(100% + 50px); bottom: -webkit-calc(100% + 59px); bottom: calc(100% + 59px); }
+.logos .icon-angl5 { right: 100%; margin-right: 50px; bottom: 100%; margin-bottom: 59px; }
 .logos .icon-angl6 { left: 105%; top: 406px; }
-.logos .icon-angl7 { right: -webkit-calc(100% + 50px); right: calc(100% + 50px); top: 375px; }
+.logos .icon-angl7 { right: 100%; margin-right: 50px; top: 375px; }
 .logos [class^="icon-angl"] { position: absolute; z-index: 10; }
 
 .top-header { position: absolute; top: -175px; right: 0; background: url(../img/logos-top.png) no-repeat; height: 324px; width: 1041px; }
@@ -151,7 +151,7 @@ body { font-family: Arial, sans-serif; font-size: 18px; line-height: 1.2; }
 
 .mail-form-wrp { position: absolute; right: 14px; }
 
-.mail-form { width: 200px; height: 172px; padding: 15px 10px 20px; text-align: center; background-color: #f7f5ff; background: -webkit-linear-gradient(45deg, #7d1756 0%, #7e1856 100%); background: linear-gradient(45deg, #7d1756 0%, #7e1856 100%); -webkit-border-radius: 5px; border-radius: 5px; z-index: 100; right: 14px; }
+.mail-form { width: 200px; height: 172px; padding: 15px 10px 20px; text-align: center; background-color: #7d1756; background: -webkit-linear-gradient(45deg, #7d1756 0%, #7e1856 100%); background: linear-gradient(45deg, #7d1756 0%, #7e1856 100%); -webkit-border-radius: 5px; border-radius: 5px; z-index: 100; right: 14px; }
 .mail-form .mail-form__top { font-family: "Proximanova Regular", sans-serif; font-size: 11px; color: #fff; text-align: center; margin-bottom: 18px; }
 .mail-form .input-text { font-size: 13px; font-family: "Proximanova Regular", sans-serif; margin-bottom: 18px; }
 .mail-form .btn { background-color: #3d0122; font-family: "Proximanova Bold", sans-serif; width: 115px; }
