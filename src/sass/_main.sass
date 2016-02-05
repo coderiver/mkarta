@@ -3,7 +3,6 @@ header
 	width: 100%
 	height: 60px
 	background: #000000
-
 .header 
 	display: -webkit-box
 	display: -webkit-flex
@@ -22,7 +21,6 @@ header
 .header__tel 
 	color: #9fafb8
 	margin: 20px 15px 0 0 
-
 .menu 
 	height: 60px
 	width: 100%
@@ -49,8 +47,6 @@ header
 	display: -ms-flexbox
 	display: flex
 	text-align: center 
-
-
 +r(960)
 	.menu 
 		display: none
@@ -69,7 +65,6 @@ header
 		-webkit-justify-content: space-between
 		-ms-flex-pack: justify
 		justify-content: space-between
-
 .love 
 	background: url(../img/love.png) no-repeat center
 	height: 879px
@@ -84,9 +79,8 @@ header
 	.love__tpic
 		padding-top: 170px
 	.love__mpic
-		margin-top: -23px
 		text-align: left
-		margin: auto
+		margin: -23px auto 0
 		max-width: 640px
 		// +hide-text
 		+r(768)
@@ -218,45 +212,53 @@ header
 .m-card__tpic
 	background: url(../img/mcard2.png) no-repeat
 	max-width: 817px
-	height: 90px
+	background-size: contain
 	margin: auto
 	+bold
-	font-size: 49px
+	font-size: 43px
 	color: #fff
 	letter-spacing: -0.01em
 	word-spacing: -0.1em
 	text-align: left
-	padding-top: 0.14285714285714285em // 7px / 49px
-	padding-left: 0.673469387755102em // 33px / 49px
+	padding: 11px 10px
+	text-align: center
 	+r(900)
 		background: #B7176E
-		text-align: center
-		height: auto
-		padding: 2px 10px
 		font-size: 35px
 		max-width: 90%
+		padding: 16px 10px
 	+r(720)
 		font-size: 24px
 		max-width: 100%
 		word-spacing: 0
 		letter-spacing: 0
+	.icon-lmodna
+		margin-right: 10px
+		+r(900)
+			width: 55px
+			height: 50px
+		+r(500)
+			width: 40px
+			height: 37px
+	.icon-mkasta-logo
+		+r(900)
+			width: 40px
+			height: 50px
+		+r(500)
+			width: 30px
+			height: 40px
 	span, a, i
 		vertical-align: middle
 		display: inline-block
 		+regular
 		color: #fff
-	i
-		+scale(0.815)
-		+r(900)
-			+scale(0.615)
 	span 
 		i 
 			position: relative
 			top: -0.2857142857142857em //-14px / 49px
 	a
 		position: relative
-		// top: -5px
-		top: -0.10204081632653061em
+		top: -0.10204081632653061em //-5px / 49px
 .card, .bonus
 	padding: 40px 0 0
 .card

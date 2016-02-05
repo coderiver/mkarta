@@ -48,21 +48,21 @@ a:hover { text-decoration: none; }
 
 .icon-angl3 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -175px -288px; }
 
-.icon-angl4 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -350px -288px; }
+.icon-angl4 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -289px 0px; }
 
-.icon-angl5 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -289px 0px; }
+.icon-angl5 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -639px 0px; }
 
 .icon-angl6 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -639px -182px; }
 
-.icon-angl7 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -639px 0px; }
+.icon-angl7 { background-image: url("../img/icons.png"); width: 171px; height: 178px; background-position: -350px -288px; }
 
 .icon-old { background-image: url("../img/icons.png"); width: 285px; height: 284px; background-position: 0px 0px; }
 
 .icon-heart-sale { background-image: url("../img/icons.png"); width: 149px; height: 79px; background-position: -639px -364px; }
 
-.icon-love-modnakasta { background-image: url("../img/icons.png"); width: 96px; height: 83px; background-position: -464px -182px; }
+.icon-mkasta-logo { background: url(../img/mkasta-logo.png) no-repeat; width: 43px; height: 55px; background-size: contain; }
 
-.icon-mkasta-logo { background-image: url("../img/icons.png"); width: 52px; height: 66px; background-position: -564px -182px; }
+.icon-lmodna { background: url(../img/lmodna.png) no-repeat; width: 79px; height: 69px; background-size: contain; }
 
 .out { background-color: #000; background-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(13%, black), color-stop(50%, #ad1285), color-stop(86%, black), to(black)); background-image: -webkit-linear-gradient(bottom, black 0%, black 13%, #ad1285 50%, black 86%, black 100%); background-image: linear-gradient(to top, black 0%, black 13%, #ad1285 50%, black 86%, black 100%); min-width: 300px; }
 
@@ -97,7 +97,7 @@ header { width: 100%; height: 60px; background: #000000; }
 .love { background: url(../img/love.png) no-repeat center; height: 879px; text-align: center; }
 .love .love__in { padding: 0 20px; }
 .love .love__tpic { padding-top: 170px; }
-.love .love__mpic { margin-top: -23px; text-align: left; margin: auto; max-width: 640px; }
+.love .love__mpic { text-align: left; margin: -23px auto 0; max-width: 640px; }
 .love .love__mpic i { vertical-align: middle; }
 .love .love__mpic .icon-love { color: #fff; font-size: 177px; }
 .love .love__mpic .icon-sale { color: #b7176e; font-size: 82px; position: relative; top: 17px; left: 30px; }
@@ -121,9 +121,9 @@ header { width: 100%; height: 60px; background: #000000; }
 .m-card .card__title { padding: 0 20px 45px; }
 .m-card .heart { display: inline-block; vertical-align: top; width: 50%; }
 
-.m-card__tpic { background: url(../img/mcard2.png) no-repeat; max-width: 817px; height: 90px; margin: auto; font-family: "PfSqureSansPro Bold", sans-serif; font-size: 49px; color: #fff; letter-spacing: -0.01em; word-spacing: -0.1em; text-align: left; padding-top: 0.14286em; padding-left: 0.67347em; }
+.m-card__tpic { background: url(../img/mcard2.png) no-repeat; max-width: 817px; background-size: contain; margin: auto; font-family: "PfSqureSansPro Bold", sans-serif; font-size: 43px; color: #fff; letter-spacing: -0.01em; word-spacing: -0.1em; text-align: left; padding: 11px 10px; text-align: center; }
+.m-card__tpic .icon-lmodna { margin-right: 10px; }
 .m-card__tpic span, .m-card__tpic a, .m-card__tpic i { vertical-align: middle; display: inline-block; font-family: "PfSqureSansPro Regular", sans-serif; color: #fff; }
-.m-card__tpic i { -webkit-transform: scale(0.815); -ms-transform: scale(0.815); transform: scale(0.815); }
 .m-card__tpic span i { position: relative; top: -0.28571em; }
 .m-card__tpic a { position: relative; top: -0.10204em; }
 
@@ -136,7 +136,7 @@ header { width: 100%; height: 60px; background: #000000; }
 .card__title span { padding: 0 6px; position: relative; top: 1px; }
 
 .heart { position: relative; }
-.heart.heart_arrow:before { content: " "; display: block; position: absolute; left: 0; right: 0; margin: auto; bottom: 97%; background-image: url("../img/icons.png"); width: 25px; height: 53px; background-position: -289px -182px; }
+.heart.heart_arrow:before { content: " "; display: block; position: absolute; left: 0; right: 0; margin: auto; bottom: 97%; background-image: url("../img/icons.png"); width: 25px; height: 53px; background-position: -464px -182px; }
 .heart.heart_arrow:after { content: " "; display: block; position: absolute; top: 73px; right: -20px; background-image: url("../img/icons.png"); width: 40px; height: 13px; background-position: -639px -447px; }
 .heart figcaption { font: 18px Arial, sans-serif; color: #fff; margin-top: 52px; }
 .heart figcaption span { color: #b2b2b2; font-size: 14px; display: block; margin-top: 24px; }
@@ -215,8 +215,9 @@ header { width: 100%; height: 60px; background: #000000; }
  .header__left{ padding-left: 10px; }
  .header{ width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; text-align: center; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; } }
 @media only screen and (max-width: 900px){
- .m-card__tpic{ background: #B7176E; text-align: center; height: auto; padding: 2px 10px; font-size: 35px; max-width: 90%; }
- .m-card__tpic i{ -webkit-transform: scale(0.615); -ms-transform: scale(0.615); transform: scale(0.615); } }
+ .m-card__tpic{ background: #B7176E; font-size: 35px; max-width: 90%; padding: 16px 10px; }
+ .m-card__tpic .icon-lmodna{ width: 55px; height: 50px; }
+ .m-card__tpic .icon-mkasta-logo{ width: 40px; height: 50px; } }
 @media only screen and (max-width: 768px){
  .love .love__mpic{ text-align: left; margin-top: -10px; }
  .love .love__mpic .icon-love{ font-size: 120px; }
@@ -237,6 +238,9 @@ header { width: 100%; height: 60px; background: #000000; }
  .heart.heart_arrow:after{ left: 0; right: 0; margin: auto; top: 108%; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
  .heart figcaption{ margin-top: 20px; }
  .bonus{ font-size: 26px; } }
+@media only screen and (max-width: 500px){
+ .m-card__tpic .icon-lmodna{ width: 40px; height: 37px; }
+ .m-card__tpic .icon-mkasta-logo{ width: 30px; height: 40px; } }
 @media only screen and (max-width: 480px){
  .top-header{ background: url(../img/logos-top-med.png) no-repeat; background-size: cover; width: 280px; height: 215px; top: -120px; }
  .top-header .top-header__title{ font-size: 18px; left: 80px; max-width: 115px; top: 70px; }
