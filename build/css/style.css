@@ -107,9 +107,8 @@ a:hover { text-decoration: none; }
 .m-card__tpic { background: url(../img/mcard2.png) no-repeat; max-width: 817px; height: 90px; margin: auto; font-family: "PfSqureSansPro Bold", sans-serif; font-size: 49px; color: #fff; letter-spacing: -0.01em; word-spacing: -0.1em; text-align: left; padding-top: 0.14286em; padding-left: 0.67347em; }
 .m-card__tpic span, .m-card__tpic a, .m-card__tpic i { vertical-align: middle; display: inline-block; font-family: "PfSqureSansPro Regular", sans-serif; color: #fff; }
 .m-card__tpic i { -webkit-transform: scale(0.815); -ms-transform: scale(0.815); transform: scale(0.815); }
-.m-card__tpic .m-card__name i { position: relative; top: -0.28571em; }
-.m-card__tpic a.m-card__name { position: relative; top: -0.10204em; }
-.m-card__tpic .sign { font-family: "PfSqureSansPro Bold", sans-serif; }
+.m-card__tpic span i { position: relative; top: -0.28571em; }
+.m-card__tpic a { position: relative; top: -0.10204em; }
 
 .card, .bonus { padding: 40px 0 0; }
 
@@ -216,8 +215,6 @@ a:hover { text-decoration: none; }
  .heart.heart_arrow:after{ left: 0; right: 0; margin: auto; top: 108%; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
  .heart figcaption{ margin-top: 20px; }
  .bonus{ font-size: 26px; } }
-@media only screen and (max-width: 535px){
- .m-card__tpic i{ -webkit-transform: scale(0.415); -ms-transform: scale(0.415); transform: scale(0.415); } }
 @media only screen and (max-width: 480px){
  .top-header{ background: url(../img/logos-top-med.png) no-repeat; background-size: cover; width: 280px; height: 215px; top: -120px; }
  .top-header .top-header__title{ font-size: 18px; left: 80px; max-width: 115px; top: 70px; }
